@@ -862,6 +862,8 @@ background-color: #2F303A;
 border: 1px solid var(--interactive-elements-color);
 }
 
+/* ====== FORM in Modal Windwow ======= */
+
 .modal-form {
  margin-top: 40px;
  align-items: center;
@@ -892,6 +894,14 @@ padding: 0px;
 align-items: center;
 }
 
+.fieldset-modal:hover {
+outline: 1px solid var(--interactive-elements-color);
+  
+}
+.fieldset-modal:has(input:focus) {
+outline: 1px solid var(--interactive-elements-color);  
+}
+
 .fieldset-modal-comment {
 display: flex;
 width: 448px;
@@ -904,14 +914,37 @@ border-radius: 4px;
 
 }
 
+.fieldset-modal-comment:hover {
+outline: 1px solid var(--interactive-elements-color); 
+}
+
+.fieldset-modal-comment:has(textarea:focus) {
+outline: 1px solid var(--interactive-elements-color); 
+}
+
 textarea {
+/* display:flex;
+position: relative; */
 resize: none;
 border: 0;
 background-color: transparent;
 font-size: 16px;  
 width: 448px;
 height: 120px;
+margin: 0px;
+padding: 10px 2px;
 }
+
+/* textarea .lala {
+position: absolute;
+top: -30px;
+left: 0px;
+color: rgba(117, 117, 117, 1);
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+
+} */
 
 .modal-form label {
 position: absolute;
@@ -924,14 +957,25 @@ letter-spacing: 0.01em;
 
 }
 
+.modal-form label.lala {
+  position: absolute;
+  top: 279px;
+  left: 40px;
+}
 .modal-form input {
 border: 0;
 background-color: transparent;
 font-size: 16px;  
+width: 448px;
 
 }
 
 .modal-form input:focus {
+outline: none;
+
+
+}
+textarea:focus {
 outline: none;
 }
 
@@ -944,6 +988,7 @@ line-height: 24px;
 letter-spacing: 0.03em;
 text-align: left;
 align-items: center;
+margin-top: 20px;
 
 
 }
@@ -967,3 +1012,4 @@ margin-top: 30px;
 .submit-button.send {
 margin: 0px;
 }
+

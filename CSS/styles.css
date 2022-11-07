@@ -1029,6 +1029,12 @@ input.form {
   height: 40px;
 }
 
+input.form:has(input:focus) {
+fill: var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+} 
+
 .submit-button.subscribe {
 display: inline-flex;
 align-items: center;

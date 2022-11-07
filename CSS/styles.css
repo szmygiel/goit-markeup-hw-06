@@ -787,23 +787,19 @@ color:var(--interactive-elements-color);
 
 
 .text {
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  font-size: 18px;
+color: rgba(255, 255, 255, 1);
+position: absolute;
+font-size: 18px;
 font-weight: 400;
 line-height: 28px;
 letter-spacing: 0.03em;
 text-align: left;
 padding: 49px 45px 49px 24px;
 margin: 0;
-
-
-
 }
 
 .newsletter-wrapper {
 margin-left: 78px;
-
 }
 
 .newsletter-text {
@@ -815,8 +811,8 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-align: left;
 color: rgba(255, 255, 255, 1);
-
 }
+
 .submit-button {
   background-color: var(--interactive-elements-color);
   color: white;
@@ -835,7 +831,6 @@ color: rgba(255, 255, 255, 1);
 .submit-button:hover {
  color: var(--main-font-color);
  background-color:#F5F4FA;
-
 }
 
 
@@ -856,10 +851,14 @@ color: rgba(255, 255, 255, 1);
 .input:hover {
 border: 1px solid var(--interactive-elements-color);
 background-color: #2F303A;
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:focus {
 background-color: #2F303A;
 border: 1px solid var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ====== FORM in Modal Windwow ======= */
@@ -867,8 +866,6 @@ border: 1px solid var(--interactive-elements-color);
 .modal-form {
  margin-top: 40px;
  align-items: center;
-
-
 }
 
 .modal-form-header {
@@ -878,7 +875,6 @@ line-height: 23px;
 color: rgba(33, 33, 33, 1);
 text-align: center;
 margin-bottom: 30px;
-
 }
 
 .fieldset-modal {
@@ -896,10 +892,14 @@ align-items: center;
 
 .fieldset-modal:hover {
 outline: 1px solid var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .fieldset-modal:has(input:focus) {
 outline: 1px solid var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -912,15 +912,18 @@ align-items: center;
 margin-left: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-
 }
 
 .fieldset-modal-comment:hover {
 outline: 1px solid var(--interactive-elements-color); 
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fieldset-modal-comment:has(textarea:focus) {
 outline: 1px solid var(--interactive-elements-color); 
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea {
@@ -942,27 +945,25 @@ color: rgba(117, 117, 117, 1);
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
-
 }
 
-.modal-form label.lala {
+.modal-form label.textarea {
   position: absolute;
   top: 279px;
   left: 40px;
 }
+
 .modal-form input {
 border: 0;
 background-color: transparent;
 font-size: 16px;  
 width: 404px;
-
 }
 
 .modal-form input:focus {
 outline: none;
-
-
 }
+
 textarea:focus {
 outline: none;
 }
@@ -970,16 +971,14 @@ outline: none;
 .modal-form .modal-checkbox {
 display: flex;
 position: static;
-margin-left: 40px;  
-margin-right: 40px;
+margin-left: 52px;  
+margin-right: 54px;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
 text-align: left;
 align-items: center;
 margin-top: 20px;
-
-
 }
 
 .modal-checkbox input {
@@ -1004,25 +1003,29 @@ margin: 0px;
 
 .icons-modal-form {
 margin: 14px 15px;
-
 }
 
 .icons-modal-form:hover {
 fill: var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 .fieldset-modal:has(input:hover) {
 fill: var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
 .fieldset-modal:has(input:focus) {
 fill: var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input.form {
   height: 40px;
- 
 }
 
 .submit-button.subscribe {
@@ -1032,10 +1035,32 @@ padding-left: 42px;
 gap: 24px;
 }
 
-/* !!!!! ZRÓB CoŚ z tym HOVEREM !!!!!! */
-
 .submit-button.subscribe:hover {
  background-color: var(--interactive-elements-color);
  color: white;
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ scale: 1.05;
+}
+
+.icon-check {
+width: 16px;
+height: 15px;
+ position: absolute;
+ left: 55px; 
+ bottom: 125px;
+ fill: white; 
+ border: solid 1px #212121;
+border-radius: 2px;
+}
+
+input:checked + span svg {
+fill: white;  
+background-color: #2196f3;
+border: 0.2px solid #FFFFFF;
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input.checkbox {
+visibility: hidden;
 }

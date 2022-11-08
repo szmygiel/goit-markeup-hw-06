@@ -855,12 +855,12 @@ transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-.input:focus {
+/* .input:focus {
 background-color: #2F303A;
 border: 1px solid var(--interactive-elements-color);
 transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ====== FORM in Modal Windwow ======= */
 
@@ -921,7 +921,7 @@ transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-.fieldset-modal-comment:has(textarea:focus) {
+.fieldset-modal-comment:focus-within  {
 outline: 1px solid var(--interactive-elements-color); 
 transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

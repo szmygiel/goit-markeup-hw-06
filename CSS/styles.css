@@ -855,12 +855,12 @@ transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-/* .input:focus {
+.input:focus {
 background-color: #2F303A;
-border: 1px solid var(--interactive-elements-color);
+border: 3px solid #858585 ;
 transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
 /* ====== FORM in Modal Windwow ======= */
 

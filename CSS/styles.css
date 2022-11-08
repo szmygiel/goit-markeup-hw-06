@@ -1019,10 +1019,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 } */
 
-.fieldset-modal:has(input:focus) {
+/* .fieldset-modal:has(input:focus) {
 fill: var(--interactive-elements-color);
 transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.fieldset-modal:focus-within {
+fill: var(--interactive-elements-color);
+border-color:  var(--interactive-elements-color);
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 input.form {
